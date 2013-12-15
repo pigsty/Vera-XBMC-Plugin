@@ -48,6 +48,71 @@
         XBMCRemote.XBMCall(lul_settings.action)
       </run>
     </action>
+    <action>
+		<serviceId>urn:micasaverde-com:serviceId:MediaNavigation1</serviceId>
+		<name>Play</name>
+		<run>XBMCRemote.XBMCall("playpause")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MediaNavigation1</serviceId>
+		<name>Stop</name>
+		<run>XBMCRemote.XBMCall("stop")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MediaNavigation1</serviceId>
+		<name>FastForward</name>
+		<run>XBMCRemote.XBMCall("faster")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MediaNavigation1</serviceId>
+		<name>Rewind</name>
+		<run>XBMCRemote.XBMCall("slower")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MenuNavigation1</serviceId>
+		<name>Up</name>
+		<run>XBMCRemote.XBMCall("up")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MenuNavigation1</serviceId>
+		<name>Down</name>
+		<run>XBMCRemote.XBMCall("down")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MenuNavigation1</serviceId>
+		<name>Left</name>
+		<run>XBMCRemote.XBMCall("left")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MenuNavigation1</serviceId>
+		<name>Right</name>
+		<run>XBMCRemote.XBMCall("right")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MenuNavigation1</serviceId>
+		<name>Select</name>
+		<run>XBMCRemote.XBMCall("enter")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MenuNavigation1</serviceId>
+		<name>Back</name>
+		<run>XBMCRemote.XBMCall("back")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:MenuNavigation1</serviceId>
+		<name>Menu</name>
+		<run>XBMCRemote.XBMCall("contextmenu")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:Misc1</serviceId>
+		<name>Home</name>
+		<run>XBMCRemote.XBMCall("home")</run>
+	</action>
+	<action>
+		<serviceId>urn:micasaverde-com:serviceId:Misc1</serviceId>
+		<name>Info</name>
+		<run>XBMCRemote.XBMCall("info")</run>
+	</action>
    </actionList>
 </implementation>
  
