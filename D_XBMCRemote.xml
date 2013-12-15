@@ -23,6 +23,21 @@
         <eventSubURL>/upnp/event/XBMC1</eventSubURL>
         <SCPDURL>S_XBMCRemote.xml</SCPDURL>
       </service>
+      <service>
+				<serviceType>urn:micasaverde-com:service:MenuNavigation:1</serviceType>
+				<serviceId>urn:micasaverde-com:serviceId:MenuNavigation1</serviceId>
+				<SCPDURL>S_MenuNavigation1.xml</SCPDURL>
+			</service>
+			<service>
+				<serviceType>urn:micasaverde-com:service:MediaNavigation:1</serviceType>
+				<serviceId>urn:micasaverde-com:serviceId:MediaNavigation1</serviceId>
+				<SCPDURL>S_MediaNavigation1.xml</SCPDURL>
+			</service>
+			<service>
+				<serviceType>urn:micasaverde-com:service:Misc:1</serviceType>
+				<serviceId>urn:micasaverde-com:serviceId:Misc1</serviceId>
+				<SCPDURL>S_Misc1.xml</SCPDURL>
+			</service>
     </serviceList>
     <implementationList>
       <implementationFile>I_XBMCRemote.xml</implementationFile>
