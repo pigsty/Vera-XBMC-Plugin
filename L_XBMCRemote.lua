@@ -116,7 +116,7 @@ function xbmc_json_call( meth, para, msg_id )
 	
 	local request = {
 						jsonrpc = "2.0";
-						id = msg_id or meth;
+						id = 1; -- was previously defined as: msg_id or meth
 					}
 					
 	request.method = meth
@@ -167,18 +167,26 @@ function XBMCall (action)
 	elseif (action == "enter") then
 		method = "Input.Select"
 
+	--CONTEXT MENU
+	elseif (action == "contextmenu") then
+		method = "Input.ContextMenu"
+		
+	--INFO
+	elseif (action == "info") then
+		method = "Input.Info"
+
 	--PLAY / PAUSE
 	elseif (action == "playpause") then
 		method = "Player.PlayPause"
 		params = {
-			playerid = "1";
+			playerid = 1;
 		}
 
 	--STOP
 	elseif (action == "stop") then
 		method = "Player.Stop"
 		params = {
-			playerid = "1";
+			playerid = 1;
 		}
 
 	--MUTE
@@ -220,21 +228,21 @@ function XBMCall (action)
 	elseif (action == "next") then
 		method = "Player.GoNext"
 		params = {
-			playerid = "1";
+			playerid = 1;
 		}
 	
 	--PREVIOUS
 	elseif (action == "prev") then
 		method = "Player.GoPrevious"
 		params = {
-			playerid = "1";
+			playerid = 1;
 		}
 	
 	--FASTER
 	elseif (action == "faster") then
 		method = "Player.SetSpeed"
 		params = {
-			playerid = "1";
+			playerid = 1;
 			speed = "increment";
 		}
 	
@@ -242,7 +250,7 @@ function XBMCall (action)
 	elseif (action == "slower") then
 		method = "Player.SetSpeed"
 		params = {
-			playerid = "1";
+			playerid = 1;
 			speed = "decrement";
 		}		
 	
